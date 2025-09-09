@@ -1,10 +1,17 @@
 const arg = process.argv.slice(2);
 
+// # Check if input array is empty
+if (arg.length === 0) {
+  console.error("Please provide your move to play..");
+  console.log(
+    "Example : Node RockPaperScissors.js [Your move like stone, paper or scissors]"
+  );
+  return;
+}
+
 // # check to see either give only one option
 if (arg.length > 1) {
-  console.log(
-    "Please give one option at one time form (stone, paper, scissors)."
-  );
+  console.log("Please give one move at a time form (stone, paper, scissors).");
   return;
 }
 

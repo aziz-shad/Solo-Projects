@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="app.js" defer></script>
+    <title>Solo Project Web</title>
+  </head>
+  <body>
+    <main class="max-w-lg mx-auto grid grid-flow-row gap-10 p-5 text-center">
+      <section class="bg-slate-200 rounded-xl shadow-lg m-5 p-5">
+        <h1>Ceasar Cipher</h1>
+        <h2 class="text-start">Enter text here</h2>
+        <textarea
+          rows="4"
+          class="textarea textarea-success textarea-lg"
+          id="input"
+        ></textarea>
+        <div class="flex justify-center m-5 gap-5">
+          <button id="cipher" class="btn btn-primary">To Cipher</button>
+          <button id="decipher" class="btn btn-secondary">To Decipher</button>
+        </div>
+        <h2>Output</h2>
+        <textarea
+          rows="4"
+          class="textarea textarea-info textarea-lg"
+          id="Output"
+        ></textarea>
+      </section>
+      <section class="bg-slate-200 rounded-xl shadow-lg m-5 p-5">
+        <h1>Pig Latin</h1>
+        <h2>Enter text here</h2>
+        <textarea
+          rows="4"
+          class="textarea textarea-success textarea-lg"
+          id="input"
+        ></textarea>
+        <div class="flex justify-center m-5 gap-5">
+          <button class="btn btn-primary">To Pig Latin</button>
+        </div>
+        <h2>Output</h2>
+        <textarea
+          rows="4"
+          class="textarea textarea-info textarea-lg"
+          id="input"
+        ></textarea>
+      </section>
+    </main>
+  </body>
+</html>

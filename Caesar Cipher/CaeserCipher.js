@@ -61,6 +61,13 @@ const Cipher = [
 // # removing first two arguments from the command line arguments.
 const inputArray = process.argv.slice(2);
 
+// # Check if input array is empty
+if (inputArray.length === 0) {
+  console.error("Please provide some text to cipher..");
+  console.log("Example : Node CaeserCipher.js [some text here]");
+  return;
+}
+
 // # convert array to string sentence {abc def}
 const plainTextString = inputArray.join(" ");
 

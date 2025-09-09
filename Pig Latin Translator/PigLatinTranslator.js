@@ -2,6 +2,13 @@
 
 const arg = process.argv.slice(2);
 
+// # Check if input array is empty
+if (arg.length === 0) {
+  console.error("Please provide some text to translate to Pig Latin..");
+  console.log("Example : Node PigLatinTranslator.js [some text here]");
+  return;
+}
+
 // # generate the Pig latin Translator
 const pigLatinTranslator = arg.map((word) => {
   if (!isVowel(word[0]) && isVowel(word[1])) {
